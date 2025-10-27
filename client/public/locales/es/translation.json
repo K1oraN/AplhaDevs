@@ -1,0 +1,296 @@
+{
+  "header": {
+    "navSolutions": "Soluciones",
+    "navSubscriptions": "Suscripciones",
+    "navPackages": "Paquetes",
+    "navProjects": "Proyectos",
+    "navContact": "Contacto",
+    "ctaButton": "Área de Cliente"
+  },
+  "hero": {
+    "since": "DESDE 2024",
+    "title": "El Futuro de la Innovación Digital.",
+    "subtitle": "Ofrecemos desde la creación de sitios web, aplicaciones y sistemas hasta el mantenimiento de software y hardware, todo en un solo lugar.",
+    "ctaButton": "Hable con nuestro equipo",
+    "servicesButton": "Nuestros Servicios"
+  },
+  "services": {
+    "title": "Nuestras Soluciones",
+    "subtitle": "Ecosistema Tecnológico Completo",
+    "description": "Ofrecemos desde la creación de sitios web, aplicaciones y sistemas hasta el mantenimiento de software y hardware, todo en un solo lugar.",
+    "price": "Bajo Consulta",
+    "categories": [
+      { "title": "Desarrollo Web", "desc": "Sitios institucionales, Landing Pages, E-commerce, Blogs, Portales LMS, Dashboards y Marketplaces." },
+      { "title": "Aplicaciones Móviles", "desc": "Apps nativas e híbridas (iOS y Android) para LMS, Delivery, Agendamiento y Gestión Financiera." },
+      { "title": "Sistemas Web / SaaS", "desc": "ERPs, CRMs, Sistemas de Gestión, Plataformas de Tickets y Software como Servicio (SaaS) a medida." },
+      { "title": "Inteligencia Artificial y Datos", "desc": "Chatbots, Machine Learning, Power BI, Visión Computacional y Automatización Inteligente (RPA)." },
+      { "title": "Infra, Cloud y Seguridad", "desc": "Configuración en Nube (AWS, Azure, GCP), DevOps (CI/CD), Ciberseguridad, Pentesting y Monitoreo." },
+      { "title": "Mantenimiento y Hardware", "desc": "Planes de mantenimiento de sitios/sistemas, soporte técnico remoto y mantenimiento de hardware/redes." },
+      { "title": "Diseño y Experiencia", "desc": "Diseño UI/UX para Web y Móvil (Figma), Identidad Visual (Logotipo, Manual de Marca) y activos para Redes Sociales." },
+      { "title": "Marketing Digital y SEO", "desc": "Optimización SEO, Tráfico Pago (Google/Meta Ads), Gestión de Redes Sociales, Copywriting y Email Marketing." },
+      { "title": "Integraciones y Automatizaciones", "desc": "Integración de APIs (REST), Automatización de Procesos (Zapier/Make), Pasarelas de Pago y Optimización de Rendimiento." }
+    ]
+  },
+  "subscription": {
+    "title": "Nuestro Modelo de Suscripción",
+    "subtitle": "Software por Suscripción",
+    "description": "¿No necesitas un proyecto complejo desde cero? Usa nuestras soluciones listas y personalizables por una tarifa mensual accesible, sin gastar mucho ni ocupar todo el límite de tu tarjeta. La solución ideal para quien busca agilidad, facilidad y bajo costo.",
+    "buttonText": "Saber Más",
+    "popularTag": "Más Popular",
+    "period": "/mes",
+    "popularPlanTitle": "Catálogo E-commerce",
+    "plans": [
+      { "title": "Landing Page", "price": "€ 50", "desc": "Perfecto para lanzamientos y captura de leads. Incluye hosting, SSL y panel de métricas." },
+      { "title": "Sitio Institucional", "price": "€ 99", "desc": "Tu empresa online con 'Quiénes Somos', 'Servicios' y 'Contacto'. Incluye hosting y correo profesional." },
+      { "title": "Catálogo E-commerce", "price": "€ 199", "desc": "Muestra tus productos con carrito integrado a WhatsApp y panel de gestión de pedidos." },
+      { "title": "Sistema de Agendamiento", "price": "€ 149", "desc": "Ideal para clínicas, barberías y consultorios. Panel de administración e integración con Google Calendar." },
+      { "title": "Blog / Portal de Contenido", "price": "€ 129", "desc": "Publica tus artículos con optimización SEO y panel de gestión de posts." },
+      { "title": "Chatbot (IA)", "price": "€ 179", "desc": "Atención 24/7 en tu sitio web o WhatsApp con un chatbot entrenado con tu información." },
+      { "title": "Panel de Gestión (Mini-CRM)", "price": "€ 249", "desc": "Controla tus clientes, propuestas y flujo de caja en un panel simple y preconstruido." },
+      { "title": "Dashboard de Datos (Power BI)", "price": "€ 279", "desc": "Visualiza tus datos (ventas, finanzas) en tiempo real. Conectamos con tus hojas de cálculo o sistema." },
+      { "title": "Aplicación Móvil (Plantilla)", "price": "€ 299", "desc": "Una app institucional (iOS/Android) para tu negocio. La publicamos en las tiendas por ti." }
+    ]
+  },
+  "packages": {
+    "title": "Nuestros Paquetes de Servicios",
+    "subtitle": "Planes de Paquetes",
+    "description": "Contrata nuestra experiencia en paquetes mensuales. Enfoque en mantenimiento, soporte, marketing y optimización continua.",
+    "buttonHire": "Contratar Ahora",
+    "buttonContact": "Contáctanos",
+    "popularTag": "Más Popular",
+    "period": "/mes",
+    "customPriceText": "Bajo Consulta",
+    "popularPlanTitle": "Paquete Business",
+    "plans": [
+      { "title": "Paquete Starter", "subtitle": "💡 Ideal para garantizar presencia online y estabilidad técnica.", "price": "€ 299", "features": ["Alojamiento para 1 sitio (hasta 10 págs.)", "Mantenimiento de software (actualizaciones y correcciones)", "Soporte técnico por email", "Mantenimiento básico de hardware", "Atención en horario comercial", "Informes mensuales de rendimiento"] },
+      { "title": "Paquete Business", "subtitle": "💡 Pensado para empresas que dependen de la tecnología a diario.", "price": "€ 899", "features": ["Acceso a SaaS de Gestión Empresarial", "Mantenimiento de software prioritario", "Servidor Cloud escalable (AWS/Azure/GCP)", "Soporte 24/7 por teléfono/chat", "Mantenimiento de hardware (1 visita técnica/mes)", "Backup y monitoreo automatizado"] },
+      { "title": "Paquete Enterprise", "subtitle": "💡 Soluciones completas, a medida y de alto rendimiento.", "price": "€ 4000", "features": ["Desarrollo personalizado de IA y SaaS", "Servicios de ciberseguridad y auditoría técnica", "Infraestructura dedicada y balanceo de carga", "Mantenimiento de hardware y software corporativo", "Equipo técnico exclusivo", "Integraciones de APIs y automatizaciones"] },
+      { "title": "Paquete Digital Pro", "subtitle": "💡 Combina marketing, SEO y rendimiento para acelerar resultados.", "price": "€ 699", "features": ["SEO técnico y optimización de velocidad", "Integración con Google Analytics y Search Console", "Gestión de tráfico pago (Google / Meta Ads)", "Calendario de publicaciones y copywriting", "Automatización de emails y generación de leads", "Optimización móvil y UX mejorada"] },
+      { "title": "Paquete Dev & Cloud", "subtitle": "💡 Paquete técnico para quienes necesitan estabilidad y escalabilidad.", "price": "€ 1200", "features": ["Infraestructura en nube (despliegue, CI/CD)", "Integración de APIs y automatizaciones", "Optimización de base de datos y rendimiento", "Backup y monitoreo continuo", "Informes de uso y uptime", "Soporte técnico especializado"] },
+      { "title": "Paquete Data & IA", "subtitle": "💡 Convierte tus datos en inteligencia de negocio.", "price": "€ 2500", "features": ["Dashboards en Power BI", "Modelos de Machine Learning personalizados", "Informes automáticos e insights predictivos", "Integración con APIs y bases de datos", "Entrenamiento de IA (Chatbot, NLP, etc.)", "Seguridad y anonimización de datos"] },
+      { "title": "Paquete Cyber Protect", "subtitle": "💡 Seguridad total para los sistemas y datos de tu empresa.", "price": "€ 1800", "features": ["Auditoría de seguridad y Pentesting", "Firewall y protección de red", "Monitoreo continuo de amenazas (SIEM)", "Backup seguro y recuperación de desastres", "Formación en buenas prácticas para empleados"] },
+      { "title": "Paquete Full Stack", "subtitle": "💡 Todo en un paquete — tecnología, diseño, marketing y rendimiento.", "price": "€ 3999", "features": ["Desarrollo Web + Móvil", "Diseño UI/UX e identidad visual", "SEO y tráfico pago", "Cloud + mantenimiento completo", "Seguridad y backup", "Automatización de procesos"] },
+      { "title": "Plan Personalizado", "subtitle": "💡 Arma tu paquete de servicios a medida.", "price": "Bajo Consulta", "features": ["Combina servicios de diferentes paquetes", "Define tu prioridad de atención", "Contrata un volumen específico de horas", "Enfoque total en tus metas", "Ideal para demandas únicas"] }
+    ]
+  },
+  "portfolio": { 
+    "title": "Casos de Éxito",
+    "subtitle": "Nuestro Portafolio",
+    "description": "Vea algunos de los desafíos que hemos transformado en soluciones exitosas para nuestros clientes.",
+    "projects": [
+        { "title": "SaaS de Gestión (Fintech)", "desc": "Plataforma completa de gestión financiera para PYMEs, con dashboard e informes.", "tech": ["React", "Node.js", "MongoDB", "Tailwind"] },
+        { "title": "E-commerce (Minorista)", "desc": "Tienda online de alto rendimiento con integración de pagos e inventario.", "tech": ["React", "Next.js", "Stripe"] },
+        { "title": "Aplicación Móvil (Salud)", "desc": "App de monitorización de pacientes con React Native e integración con APIs de salud.", "tech": ["React Native", "Firebase", "IA"] }
+    ]
+  },
+  "process": { 
+    "title": "Cómo Trabajamos",
+    "subtitle": "Nuestro Proceso",
+    "description": "Desde el concepto hasta el lanzamiento, seguimos un proceso ágil y transparente para garantizar su satisfacción.",
+    "steps": [
+        { "number": "01", "title": "Planificación e Inmersión", "desc": "Entendemos tu desafío, definimos el alcance y creamos un plan de proyecto detallado." },
+        { "number": "02", "title": "Diseño y Prototipado", "desc": "Creamos la arquitectura de la información, flujos de usuario (UX) y diseño de interfaz (UI) de alta fidelidad." },
+        { "number": "03", "title": "Desarrollo y Pruebas", "desc": "Nuestros ingenieros codifican la solución (Front-end, Back-end, IA) y realizan rigurosas pruebas de calidad (QA)." },
+        { "number": "04", "title": "Lanzamiento y Soporte", "desc": "Realizamos el despliegue en servidores optimizados y ofrecemos planes de mantenimiento y soporte continuo." }
+    ]
+  },
+  "testimonials": { 
+    "title": "Resultados que Hablan por Sí Mismos",
+    "description": "No somos solo una agencia de software; somos socios tecnológicos enfocados en su crecimiento. Nuestros números lo demuestran.",
+    "stats": [
+      { "value": "1+", "label": "Año en el Mercado" },
+      { "value": "50+", "label": "Clientes Satisfechos" },
+      { "value": "50+", "label": "Proyectos Entregados" },
+      { "value": "98%", "label": "Uptime de Servicios" }
+    ]
+  },
+  "faq": { 
+    "title": "Resuelve tus Dudas",
+    "subtitle": "Preguntas Frecuentes",
+    "questions": [
+      { "question": "1. ¿Qué tipos de servicios ofrece AlphaDevs?", "answer": "Ofrecemos soluciones tecnológicas completas, incluyendo sitios web institucionales, e-commerces, sistemas web, aplicaciones móviles, SaaS, inteligencia artificial, automatizaciones, marketing digital, infraestructura en la nube, ciberseguridad y mantenimiento de software/hardware. Nuestro enfoque es entregar soluciones a medida que realmente impulsen el negocio del cliente." },
+      { "question": "2. ¿Cuánto cuesta desarrollar un sitio web o sistema?", "answer": "El costo depende del tipo de proyecto, funcionalidades y complejidad. Por ejemplo: Landing Pages desde €1000, Sitios Institucionales desde €3000, E-commerces desde €8000, Sistemas Web/SaaS desde €20000. Cada proyecto se evalúa individualmente, garantizando la mejor relación costo-beneficio." },
+      { "question": "3. ¿Cuál es el tiempo promedio de entrega de un proyecto?", "answer": "Depende del alcance y tipo de servicio: Landing Page: 7-15 días hábiles, Sitio Institucional: 15-30 días hábiles, E-commerce / Sistema Web: 30-90 días hábiles. Proyectos personalizados (IA, SaaS, Cloud): plazos definidos después del briefing. Trabajamos con un cronograma claro y seguimiento constante." },
+      { "question": "4. ¿Proporcionan contratos y facturas?", "answer": "Sí. Todos los proyectos y planes incluyen un contrato de prestación de servicios y la emisión de factura electrónica, garantizando transparencia y seguridad para ambas partes." },
+      { "question": "5. ¿Puedo personalizar mi paquete de servicios?", "answer": "¡Claro! Nuestros paquetes son flexibles. Puedes ajustar o combinar servicios según tus necesidades, por ejemplo, combinar mantenimiento + SEO + tráfico pago o infraestructura + SaaS + ciberseguridad." },
+      { "question": "6. ¿Qué incluye la tarifa mensual del paquete?", "answer": "Cada plan incluye un conjunto fijo de servicios, pero todos cuentan con: Mantenimiento técnico continuo, Soporte especializado, Informes mensuales, Actualizaciones de seguridad. Los paquetes más avanzados también incluyen nube, automatizaciones e IA." },
+      { "question": "7. ¿AlphaDevs también ofrece alojamiento y registro de dominios?", "answer": "¡Sí! Podemos gestionar todo el alojamiento y dominio de tu proyecto, incluyendo: Configuración de servidores, Certificados SSL, Correos corporativos, Copias de seguridad automáticas. Todo alojado en servidores en la nube escalables y seguros." },
+      { "question": "8. ¿También desarrollan aplicaciones móviles?", "answer": "Sí, desarrollamos apps nativas e híbridas (Android & iOS) utilizando Flutter y tecnologías modernas, totalmente integradas con el sistema web o plataforma SaaS del cliente." },
+      { "question": "9. ¿Cómo funciona el soporte técnico?", "answer": "El soporte se puede proporcionar por correo electrónico, chat o teléfono, según el plan contratado. Planes básicos: soporte durante el horario comercial. Planes Business/Enterprise: soporte 24/7 y prioridad para los tickets." },
+      { "question": "10. ¿AlphaDevs maneja SEO y marketing digital?", "answer": "Sí. Contamos con especialistas en SEO, tráfico pago (Google Ads / Meta Ads), automatización de marketing y optimización de conversiones. Podemos gestionar toda tu presencia digital, desde el sitio web hasta la gestión de campañas y leads." },
+      { "question": "11. ¿Trabajan con Inteligencia Artificial y automatizaciones?", "answer": "¡Sí! Ofrecemos soluciones de IA, chatbots, visión por computadora, machine learning y automatización de procesos (como integraciones entre sistemas y flujos de trabajo automatizados a través de API, Zapier, Make, etc.)." },
+      { "question": "12. ¿Puedo contratar solo servicios de infraestructura o nube?", "answer": "Sí. Si ya tienes un sistema, ofrecemos servicios de alojamiento, DevOps, copias de seguridad y monitoreo en la nube (AWS, Azure, GCP). También realizamos migraciones de servidores y optimización del rendimiento." },
+      { "question": "13. ¿Hay un período de permanencia o tarifa por cancelación?", "answer": "¡No! Los contratos son mensuales y sin período de permanencia, y pueden cancelarse en cualquier momento con un preaviso de 15 días. Para planes anuales, ofrecemos descuentos exclusivos y condiciones especiales." },
+      { "question": "14. ¿Puedo mejorar mi plan?", "answer": "Sí. Puedes cambiar a otro paquete (p. ej., de Starter a Business) en cualquier momento; el nuevo precio se ajusta proporcionalmente." },
+      { "question": "15. ¿Cómo puedo solicitar un presupuesto?", "answer": "Simplemente visita la página 'Contacto' o haz clic en 'Solicitar Presupuesto' en el sitio web. Puedes describir tu proyecto, adjuntar referencias e indicar tu presupuesto estimado. Nuestro equipo se pondrá en contacto contigo en un plazo de 24 horas hábiles con una propuesta personalizada." },
+      { "question": "16. ¿Desarrollan proyectos a medida?", "answer": "Sí, es nuestra especialidad. Trabajamos en proyectos personalizados según las necesidades del cliente: diseño, funcionalidades, integraciones y estructura a medida." },
+      { "question": "17. ¿Atienden a clientes fuera de Brasil?", "answer": "¡Sí! Atendemos a clientes internacionales en portugués, inglés y español, con facturación en Real, Dólar o Euro, e integración con métodos de pago internacionales." },
+      { "question": "18. ¿Qué tecnologías utiliza AlphaDevs?", "answer": "Utilizamos tecnologías modernas y estables, como: Python (Django, FastAPI), JavaScript (React, Node.js), Flutter, MongoDB, PostgreSQL, Docker, AWS, Azure, Power BI, APIs REST e integraciones de IA." },
+      { "question": "19. ¿Cómo funciona el mantenimiento de software?", "answer": "El mantenimiento incluye: Actualizaciones de seguridad, Corrección de errores, Mejoras de rendimiento, Copias de seguridad y monitoreo, Soporte técnico regular. Todo documentado en informes mensuales." },
+      { "question": "20. ¿AlphaDevs forma asociaciones o subcontrata proyectos?", "answer": "¡Sí! Trabajamos con asociaciones B2B, agencias de marketing, freelancers y empresas de software que deseen subcontratar etapas de desarrollo con garantía de calidad." },
+      { "question": "21. ¿Cómo puedo contactar a AlphaDevs?", "answer": "Puedes contactarnos a través de: 🌐 [TuSitioWeb]/contacto, ✉️ [TuEmail], 📱 WhatsApp (enlace directo en el sitio). Nuestro horario de atención es de lunes a viernes, de 9 AM a 6 PM." }
+    ]
+  },
+  "cta": { 
+    "title": "¿Listo para transformar tu empresa?",
+    "description": "Hablemos sobre cómo nuestras soluciones de SaaS, IA e Infraestructura pueden impulsar tus resultados. Agenda una conversación gratuita.",
+    "buttonText": "Agendar una Reunión"
+  },
+  "contact": { 
+    "title": "Contáctanos",
+    "subtitle": "Inicia tu proyecto hoy",
+    "description": "Rellena el formulario o contáctanos por uno de nuestros canales. Nuestro equipo está listo para agendar tu reunión.",
+    "emailLabel": "Correo Electrónico",
+    "whatsappLabel": "WhatsApp",
+    "form": {
+      "nameLabel": "Tu Nombre",
+      "emailLabel": "Correo Electrónico",
+      "serviceLabel": "¿Qué servicio te interesa?",
+      "messageLabel": "Tu Mensaje",
+      "messagePlaceholder": "Describe brevemente tu proyecto o duda...",
+      "submitButton": "Enviar Mensaje",
+      "serviceOptions": [ 
+            "Desarrollo Web", "Aplicaciones Móviles", "Sistemas Web / SaaS", "Inteligencia Artificial y Datos", "Infra, Cloud y Seguridad", "Mantenimiento y Hardware", "Diseño y Experiencia", "Marketing Digital y SEO", "Integraciones y Automatizaciones", "Otro"
+          ]
+    }
+  },
+  "footer": { 
+    "companyName": "ALPHADEV",
+    "tagline": "Soluciones de tecnología e innovación digital, de punta a punta.",
+    "copyright": "&copy; 2024 ALPHADEV. Todos los derechos reservados.",
+    "navTitle": "Navegación",
+    "navLinks": {
+      "home": "Inicio", "solutions": "Soluciones", "subscriptions": "Suscripciones", "packages": "Paquetes", "projects": "Proyectos", "contact": "Contacto"
+    },
+    "solutionsTitle": "Soluciones",
+    "solutionsLinks": [ 
+        "Desarrollo Web", "Sistemas Web y SaaS", "Aplicaciones Móviles", "IA y Datos", "Infraestructura y Cloud"
+    ],
+    "contactTitle": "Contacto",
+    "contactInfo": {
+      "email": "lukemisteral@gmail.com",
+      "phone": "+55 (82) 99801-7388", 
+      "serviceType": "Atención 100% Digital",
+      "location": "Todo el Mundo" 
+    }
+  },
+  "login": {
+    "title": "Accede a tu cuenta",
+    "emailLabel": "Correo Electrónico",
+    "emailPlaceholder": "Tu Correo Electrónico",
+    "passwordLabel": "Contraseña",
+    "passwordPlaceholder": "Tu Contraseña",
+    "submitButton": "Entrar",
+    "loadingButton": "Entrando...",
+    "errorMessageDefault": "Error al iniciar sesión. Verifica tus credenciales."
+  },
+  "sidebar": {
+      "dashboard": "Panel",
+      "myProjects": "Mis Proyectos",
+      "financial": "Finanzas",
+      "messages": "Mensajes",
+      "documents": "Documentos",
+      "dashboardGeneral": "Panel General",
+      "allProjects": "Todos los Proyectos",
+      "manageUsers": "Gestionar Usuarios",
+      "financialGeneral": "Finanzas Generales",
+      "logout": "Salir",
+      "loggedInAs": "Conectado como: {{email}} ({{role}})"
+  },
+  "clientDashboard": {
+    "welcome": "¡Bienvenido(a), {{name}}!",
+    "defaultName": "Cliente",
+    "description": "Este es tu panel. Resumen rápido de tus actividades.",
+    "greetingMorning": "Buenos días",
+    "greetingAfternoon": "Buenas tardes",
+    "greetingEvening": "Buenas noches",
+    "currentDate": "Hoy es {{date}}",
+    "toggleTheme": "Cambiar Tema",
+    "notifications": "Notificaciones",
+    "userProfile": "Perfil",
+    "cardActiveProjectsTitle": "Proyectos Activos",
+    "cardActiveProjectsUnit": "{{count}} en curso",
+    "cardCompletedProjectsTitle": "Proyectos Completados",
+    "cardCompletedProjectsUnit": "{{count}} finalizados",
+    "cardPendingInvoicesTitle": "Facturas Pendientes",
+    "cardPendingInvoicesUnit": "{{count}} por vencer",
+    "cardOverdueInvoicesTitle": "Facturas Vencidas",
+    "cardOverdueInvoicesUnit": "{{count}} atrasadas",
+    "cardLastPaymentTitle": "Último Pago",
+    "cardLastPaymentDate": "el {{date}}",
+    "cardNextDeliveryTitle": "Próxima Entrega",
+    "cardNextDeliveryDate": "prevista para el {{date}}",
+    "cardUnreadMessagesTitle": "Mensajes No Leídos",
+    "cardUnreadMessagesUnit": "{{count}} nuevos mensajes",
+    "cardRecentDocumentsTitle": "Documentos Recientes",
+    "cardRecentDocumentsUnit": "{{count}} nuevos docs",
+    "cardOpenTicketsTitle": "Tickets Abiertos",
+    "cardOpenTicketsUnit": "{{count}} en soporte",
+    "cardTotalSpentTitle": "Total Invertido",
+    "cardTotalSpentDesc": "hasta la fecha",
+    "projectsSectionTitle": "Proyectos Recientes",
+    "projectsPlaceholder": "La lista de proyectos recientes aparecerá aquí...",
+    "seeAllProjects": "Ver todos los proyectos",
+    "financialSectionTitle": "Resumen Financiero",
+    "financialPlaceholder": "El resumen financiero aparecerá aquí...",
+    "seeAllInvoices": "Ver todas las facturas",
+    "supportSectionTitle": "Soporte y Mensajes",
+    "supportPlaceholder": "Los últimos mensajes o tickets de soporte aparecerán aquí...",
+    "seeAllMessages": "Ver todos los mensajes",
+    "documentsSectionTitle": "Documentos Recientes",
+    "documentsPlaceholder": "Los documentos recientes aparecerán aquí...",
+    "seeAllDocuments": "Ver todos los documentos"
+  },
+  "clientMessages": {
+      "title": "Mensajes",
+      "description": "Aquí verá los mensajes intercambiados con nuestro equipo.",
+      "noMessages": "No se encontraron mensajes.",
+      "unreadTooltip": "No leído"
+  },
+  "clientDocuments": {
+      "title": "Documentos",
+      "description": "Acceda a propuestas, contratos y facturas de sus proyectos.",
+      "noDocuments": "No se encontraron documentos.",
+      "downloadButton": "Descargar",
+      "downloadButtonTooltip": "Descargar Documento"
+  },
+  "financial": {
+    "title": "Finanzas",
+    "tableHeaderInvoiceNo": "Nº Factura",
+    "tableHeaderDescription": "Descripción",
+    "tableHeaderDueDate": "Vencimiento",
+    "tableHeaderAmount": "Importe",
+    "tableHeaderStatus": "Estado",
+    "tableHeaderPaidDate": "Fecha Pago",
+    "noInvoicesFound": "No se encontraron facturas.",
+    "statusPending": "Pendiente",
+    "statusPaid": "Pagada",
+    "statusOverdue": "Vencida",
+    "statusCancelled": "Cancelada"
+  },
+  "loading": {
+    "invoices": "Cargando facturas...",
+    "projects": "Cargando proyectos...",
+    "documents": "Cargando documentos...",
+    "summary": "Cargando resumen..."
+  },
+  "errors": {
+    "notAuthenticated": "Usuario no autenticado",
+    "loadFinancialError": "Error al cargar datos financieros",
+    "loadProjectsError": "Error al cargar proyectos",
+    "loadSummaryError": "Error al cargar resumen"
+  },
+  "notifications": {
+    "title": "Notificaciones",
+    "invoiceDue": "Factura #{{invoiceNumber}} vence en {{days}} días.",
+    "projectUpdate": "Proyecto {{projectName}} actualizado a \"{{status}}\".",
+    "newMessage": "Nuevo mensaje recibido del soporte.",
+    "noNotifications": "No hay notificaciones nuevas.",
+    "seeAll": "Ver todas",
+    "timeAgo": "hace {{time}}",
+    "timeYesterday": "Ayer"
+  },
+  "profile": {
+    "settings": "Configuración"
+  }
+}

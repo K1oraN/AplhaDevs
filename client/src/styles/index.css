@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-primary-dark text-gray-200 antialiased;
+    
+    background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.04) 1px, transparent 0);
+    background-size: 25px 25px;
+  }
+}
+
+@layer components {
+  .header-scrolled {
+    background-color: rgba(12, 12, 14, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom-width: 1px;
+    border-color: #27272a;
+  }
+}

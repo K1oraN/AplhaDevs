@@ -1,0 +1,296 @@
+{
+  "header": {
+    "navSolutions": "Solutions",
+    "navSubscriptions": "Subscriptions",
+    "navPackages": "Packages",
+    "navProjects": "Projects",
+    "navContact": "Contact",
+    "ctaButton": "Client Area"
+  },
+  "hero": {
+    "since": "SINCE 2024",
+    "title": "The Future of Digital Innovation.",
+    "subtitle": "We offer everything from creating websites, apps, and systems to software and hardware maintenance, all in one place.",
+    "ctaButton": "Talk to our team",
+    "servicesButton": "Our Services"
+  },
+  "services": {
+    "title": "Our Solutions",
+    "subtitle": "Complete Technology Ecosystem",
+    "description": "We offer everything from creating websites, apps, and systems to software and hardware maintenance, all in one place.",
+    "price": "On Request",
+    "categories": [
+      { "title": "Web Development", "desc": "Institutional websites, Landing Pages, E-commerce, Blogs, LMS Portals, Dashboards, and Marketplaces." },
+      { "title": "Mobile Apps", "desc": "Native and hybrid apps (iOS & Android) for LMS, Delivery, Scheduling, and Financial Management." },
+      { "title": "Web Systems / SaaS", "desc": "ERPs, CRMs, Management Systems, Ticketing Platforms, and custom Software as a Service (SaaS)." },
+      { "title": "Artificial Intelligence & Data", "desc": "Chatbots, Machine Learning, Power BI, Computer Vision, and Intelligent Automation (RPA)." },
+      { "title": "Infra, Cloud & Security", "desc": "Cloud Setup (AWS, Azure, GCP), DevOps (CI/CD), Cybersecurity, Pentesting, and Monitoring." },
+      { "title": "Maintenance & Hardware", "desc": "Website/system maintenance plans, remote technical support, and hardware/network maintenance." },
+      { "title": "Design & Experience", "desc": "UI/UX Design for Web and Mobile (Figma), Visual Identity (Logo, Brand Manual), and Social Media assets." },
+      { "title": "Digital Marketing & SEO", "desc": "SEO Optimization, Paid Traffic (Google/Meta Ads), Social Media Management, Copywriting, and Email Marketing." },
+      { "title": "Integrations & Automations", "desc": "API Integration (REST), Process Automation (Zapier/Make), Payment Gateways, and Performance Optimization." }
+    ]
+  },
+  "subscription": {
+    "title": "Our Subscription Model",
+    "subtitle": "Software by Subscription",
+    "description": "Don't need a complex project from scratch? Use our ready-made, customizable solutions for an affordable monthly fee, without breaking the bank or maxing out your credit card. The ideal solution for those seeking agility, ease, and low cost.",
+    "buttonText": "Learn More",
+    "popularTag": "Most Popular",
+    "period": "/month",
+    "popularPlanTitle": "E-commerce Catalog",
+    "plans": [
+      { "title": "Landing Page", "price": "$ 50", "desc": "Perfect for launches and lead capture. Includes hosting, SSL, and metrics dashboard." },
+      { "title": "Institutional Website", "price": "$ 99", "desc": "Your company online with 'About Us', 'Services', and 'Contact'. Includes hosting and professional email." },
+      { "title": "E-commerce Catalog", "price": "$ 199", "desc": "Display your products with a cart integrated with WhatsApp and an order management panel." },
+      { "title": "Scheduling System", "price": "$ 149", "desc": "Ideal for clinics, barbershops, and offices. Admin panel and Google Calendar integration." },
+      { "title": "Blog / Content Portal", "price": "$ 129", "desc": "Publish your articles with SEO optimization and a post management panel." },
+      { "title": "Chatbot (AI)", "price": "$ 179", "desc": "24/7 support on your website or WhatsApp with a chatbot trained with your information." },
+      { "title": "Management Panel (Mini-CRM)", "price": "$ 249", "desc": "Control your clients, proposals, and cash flow in a simple, pre-built panel." },
+      { "title": "Data Dashboard (Power BI)", "price": "$ 279", "desc": "Visualize your data (sales, finance) in real-time. We connect to your spreadsheets or system." },
+      { "title": "Mobile App (Template)", "price": "$ 299", "desc": "An institutional app (iOS/Android) for your business. We publish it to the stores for you." }
+    ]
+  },
+  "packages": {
+    "title": "Our Service Packages",
+    "subtitle": "Package Plans",
+    "description": "Hire our expertise in monthly packages. Focus on maintenance, support, marketing, and continuous optimization.",
+    "buttonHire": "Hire Now",
+    "buttonContact": "Contact Us",
+    "popularTag": "Most Popular",
+    "period": "/month",
+    "customPriceText": "On Request",
+    "popularPlanTitle": "Business Package",
+    "plans": [
+      { "title": "Starter Package", "subtitle": "💡 Ideal for ensuring online presence and technical stability.", "price": "$ 299", "features": ["Hosting for 1 site (up to 10 pages)", "Software maintenance (updates & fixes)", "Email technical support", "Basic hardware maintenance", "Business hours support", "Monthly performance reports"] },
+      { "title": "Business Package", "subtitle": "💡 Designed for businesses that rely on technology daily.", "price": "$ 899", "features": ["Access to Business Management SaaS", "Priority software maintenance", "Scalable Cloud Server (AWS/Azure/GCP)", "24/7 phone/chat support", "Hardware maintenance (1 tech visit/month)", "Automated backup & monitoring"] },
+      { "title": "Enterprise Package", "subtitle": "💡 Complete, tailor-made solutions with high performance.", "price": "$ 4000", "features": ["Custom AI and SaaS development", "Cybersecurity services & technical audit", "Dedicated infrastructure & load balancing", "Corporate hardware & software maintenance", "Exclusive technical team", "API integrations & automations"] },
+      { "title": "Digital Pro Package", "subtitle": "💡 Combines marketing, SEO, and performance to accelerate results.", "price": "$ 699", "features": ["Technical SEO & speed optimization", "Google Analytics & Search Console integration", "Paid traffic management (Google / Meta Ads)", "Posting calendar & copywriting", "Email automation & lead generation", "Mobile optimization & enhanced UX"] },
+      { "title": "Dev & Cloud Package", "subtitle": "💡 Technical package for those needing stability and scalability.", "price": "$ 1200", "features": ["Cloud infrastructure (deploy, CI/CD)", "API integrations & automations", "Database & performance optimization", "Continuous backup & monitoring", "Usage & uptime reports", "Specialized technical support"] },
+      { "title": "Data & IA Package", "subtitle": "💡 Turn your data into business intelligence.", "price": "$ 2500", "features": ["Dashboards in Power BI", "Custom Machine Learning models", "Automatic reports & predictive insights", "API & database integration", "AI Training (Chatbot, NLP, etc.)", "Data security & anonymization"] },
+      { "title": "Cyber Protect Package", "subtitle": "💡 Total security for your company's systems and data.", "price": "$ 1800", "features": ["Security audit & Pentesting", "Firewall & network protection", "Continuous threat monitoring (SIEM)", "Secure backup & disaster recovery", "Best practices training for employees"] },
+      { "title": "Full Stack Package", "subtitle": "💡 Everything in one package — technology, design, marketing, and performance.", "price": "$ 3999", "features": ["Web + Mobile Development", "UI/UX design & visual identity", "SEO & paid traffic", "Cloud + complete maintenance", "Security & backup", "Process automation"] },
+      { "title": "Custom Plan", "subtitle": "💡 Build your tailor-made service package.", "price": "On Request", "features": ["Combine services from different packages", "Define your support priority", "Hire a specific volume of hours", "Total focus on your goals", "Ideal for unique demands"] }
+    ]
+  },
+  "portfolio": { 
+    "title": "Success Cases",
+    "subtitle": "Our Portfolio",
+    "description": "See some of the challenges we've turned into successful solutions for our clients.",
+    "projects": [
+        { "title": "Management SaaS (Fintech)", "desc": "Complete financial management platform for SMEs, with dashboard and reports.", "tech": ["React", "Node.js", "MongoDB", "Tailwind"] },
+        { "title": "E-commerce (Retail)", "desc": "High-performance online store with payment and inventory integration.", "tech": ["React", "Next.js", "Stripe"] },
+        { "title": "Mobile App (Health)", "desc": "Patient monitoring app with React Native and health API integration.", "tech": ["React Native", "Firebase", "AI"] }
+    ]
+  },
+  "process": { 
+    "title": "How We Work",
+    "subtitle": "Our Process",
+    "description": "From concept to launch, we follow an agile and transparent process to ensure your satisfaction.",
+    "steps": [
+        { "number": "01", "title": "Planning & Immersion", "desc": "We understand your challenge, define the scope, and create a detailed project plan." },
+        { "number": "02", "title": "Design & Prototyping", "desc": "We create the information architecture, user flows (UX), and high-fidelity interface design (UI)." },
+        { "number": "03", "title": "Development & Testing", "desc": "Our engineers code the solution (Front-end, Back-end, AI) and perform rigorous quality assurance (QA) tests." },
+        { "number": "04", "title": "Launch & Support", "desc": "We deploy on optimized servers and offer ongoing maintenance and support plans." }
+    ]
+  },
+  "testimonials": { 
+    "title": "Results That Speak for Themselves",
+    "description": "We are not just a software agency; we are technology partners focused on your growth. Our numbers prove it.",
+    "stats": [
+      { "value": "1+", "label": "Year in Market" },
+      { "value": "50+", "label": "Satisfied Clients" },
+      { "value": "50+", "label": "Projects Delivered" },
+      { "value": "98%", "label": "Service Uptime" }
+    ]
+  },
+  "faq": { 
+    "title": "Clear Your Doubts",
+    "subtitle": "Frequently Asked Questions",
+    "questions": [
+      { "question": "1. What types of services does AlphaDevs offer?", "answer": "We offer complete technology solutions, including institutional websites, e-commerces, web systems, mobile apps, SaaS, artificial intelligence, automations, digital marketing, cloud infrastructure, cybersecurity, and software/hardware maintenance. Our focus is delivering custom solutions that truly boost the client's business." },
+      { "question": "2. How much does it cost to develop a website or system?", "answer": "The cost depends on the project type, features, and complexity. For example: Landing Pages start at $1000, Institutional Websites at $3000, E-commerces at $8000, Web/SaaS Systems at $20000. Each project is evaluated individually, ensuring the best value." },
+      { "question": "3. What is the average project delivery time?", "answer": "It depends on the scope and service type: Landing Page: 7-15 business days, Institutional Website: 15-30 business days, E-commerce / Web System: 30-90 business days. Custom projects (AI, SaaS, Cloud): timelines defined after the briefing. We work with a clear schedule and constant follow-up." },
+      { "question": "4. Do you provide contracts and invoices?", "answer": "Yes. All projects and plans include a service agreement and electronic invoice issuance, ensuring transparency and security for both parties." },
+      { "question": "5. Can I customize my service package?", "answer": "Sure! Our packages are flexible. You can adjust or combine services according to your needs—for example, combining maintenance + SEO + paid traffic or infrastructure + SaaS + cybersecurity." },
+      { "question": "6. What is included in the monthly package fee?", "answer": "Each plan includes a fixed set of services, but all feature: Continuous technical maintenance, Specialized support, Monthly reports, Security updates. More advanced packages also include cloud, automations, and AI." },
+      { "question": "7. Does AlphaDevs also offer hosting and domain registration?", "answer": "Yes! We can manage all hosting and domain aspects of your project, including: Server configuration, SSL certificates, Corporate emails, Automatic backups. All hosted on scalable and secure cloud servers." },
+      { "question": "8. Do you develop mobile apps too?", "answer": "Yes, we develop native and hybrid apps (Android & iOS) using Flutter and modern technologies, fully integrated with the client's web system or SaaS platform." },
+      { "question": "9. How does technical support work?", "answer": "Support can be provided via email, chat, or phone, depending on the contracted plan. Basic plans: support during business hours. Business/Enterprise plans: 24/7 support and priority for tickets." },
+      { "question": "10. Does AlphaDevs handle SEO and digital marketing?", "answer": "Yes. We have specialists in SEO, paid traffic (Google Ads / Meta Ads), marketing automation, and conversion optimization. We can manage your entire digital presence, from the website to campaign and lead management." },
+      { "question": "11. Do you work with Artificial Intelligence and automations?", "answer": "Yes! We offer AI solutions, chatbots, computer vision, machine learning, and process automation (like integrations between systems and automated workflows via API, Zapier, Make, etc.)." },
+      { "question": "12. Can I hire only infrastructure or cloud services?", "answer": "Yes. If you already have a system, we offer hosting, DevOps, backup, and cloud monitoring services (AWS, Azure, GCP). We also perform server migrations and performance optimization." },
+      { "question": "13. Is there a loyalty period or cancellation fee?", "answer": "No! Contracts are monthly and without a loyalty period, and can be canceled at any time with 15 days' notice. For annual plans, we offer exclusive discounts and special conditions." },
+      { "question": "14. Can I upgrade my plan?", "answer": "Yes. You can switch to another package (e.g., from Starter to Business) at any time—the new price is adjusted proportionally." },
+      { "question": "15. How can I request a quote?", "answer": "Just visit the 'Contact' page or click 'Request a Quote' on the website. You can describe your project, attach references, and state your estimated budget. Our team will contact you within 24 business hours with a custom proposal." },
+      { "question": "16. Do you develop custom projects?", "answer": "Yes—it's our specialty. We work on custom projects according to the client's needs: tailor-made design, features, integrations, and structure." },
+      { "question": "17. Do you serve clients outside Brazil?", "answer": "Yes! We serve international clients in Portuguese, English, and Spanish, with billing in Real, Dollar, or Euro, and integration with international payment methods." },
+      { "question": "18. What technologies does AlphaDevs use?", "answer": "We use modern and stable technologies, such as: Python (Django, FastAPI), JavaScript (React, Node.js), Flutter, MongoDB, PostgreSQL, Docker, AWS, Azure, Power BI, REST APIs, and AI integrations." },
+      { "question": "19. How does software maintenance work?", "answer": "Maintenance includes: Security updates, Bug fixes, Performance improvements, Backups & monitoring, Regular technical support. All documented in monthly reports." },
+      { "question": "20. Does AlphaDevs partner or outsource projects?", "answer": "Yes! We work with B2B partnerships, marketing agencies, freelancers, and software companies looking to outsource development stages with quality assurance." },
+      { "question": "21. How can I contact AlphaDevs?", "answer": "You can contact us via: 🌐 alphadevs.dev/contact, ✉️ contact@alphadevs.dev, 📱 WhatsApp (direct link on the site). Our support hours are Monday to Friday, 9 AM to 6 PM (BRT)." }
+    ]
+  },
+  "cta": { 
+    "title": "Ready to transform your business?",
+    "description": "Let's talk about how our SaaS, AI, and Infrastructure solutions can boost your results. Schedule a free conversation.",
+    "buttonText": "Schedule a Meeting"
+  },
+  "contact": { 
+    "title": "Contact Us",
+    "subtitle": "Start your project today",
+    "description": "Fill out the form or contact us through one of our channels. Our team is ready to schedule your meeting.",
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp",
+    "form": {
+      "nameLabel": "Your Name",
+      "emailLabel": "Email",
+      "serviceLabel": "Which service interests you?",
+      "messageLabel": "Your Message",
+      "messagePlaceholder": "Briefly describe your project or question...",
+      "submitButton": "Send Message",
+      "serviceOptions": [ 
+            "Web Development", "Mobile Apps", "Web Systems / SaaS", "Artificial Intelligence & Data", "Infra, Cloud & Security", "Maintenance & Hardware", "Design & Experience", "Digital Marketing & SEO", "Integrations & Automations", "Other"
+          ]
+    }
+  },
+  "footer": { 
+    "companyName": "ALPHADEV",
+    "tagline": "End-to-end technology and digital innovation solutions.",
+    "copyright": "&copy; 2024 ALPHADEV. All rights reserved.",
+    "navTitle": "Navigation",
+    "navLinks": {
+      "home": "Home", "solutions": "Solutions", "subscriptions": "Subscriptions", "packages": "Packages", "projects": "Projects", "contact": "Contact"
+    },
+    "solutionsTitle": "Solutions",
+    "solutionsLinks": [ 
+        "Web Development", "Web Systems & SaaS", "Mobile Apps", "AI & Data", "Infrastructure & Cloud"
+    ],
+    "contactTitle": "Contact",
+    "contactInfo": {
+      "email": "lukemisteral@gmail.com",
+      "phone": "+55 (82) 99801-7388", 
+      "serviceType": "100% Digital Service",
+      "location": "Worldwide" 
+    }
+  },
+  "login": {
+    "title": "Access your account",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Your Email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Your Password",
+    "submitButton": "Enter",
+    "loadingButton": "Entering...",
+    "errorMessageDefault": "Login failed. Please check your credentials."
+  },
+  "sidebar": {
+      "dashboard": "Dashboard",
+      "myProjects": "My Projects",
+      "financial": "Financial",
+      "messages": "Messages",
+      "documents": "Documents",
+      "dashboardGeneral": "General Dashboard",
+      "allProjects": "All Projects",
+      "manageUsers": "Manage Users",
+      "financialGeneral": "General Financial",
+      "logout": "Logout",
+      "loggedInAs": "Logged in as: {{email}} ({{role}})"
+  },
+   "clientDashboard": {
+    "welcome": "Welcome, {{name}}!",
+    "defaultName": "Client",
+    "description": "This is your dashboard. Quick summary of your activities.",
+    "greetingMorning": "Good morning",
+    "greetingAfternoon": "Good afternoon",
+    "greetingEvening": "Good evening",
+    "currentDate": "Today is {{date}}",
+    "toggleTheme": "Toggle Theme",
+    "notifications": "Notifications",
+    "userProfile": "Profile",
+    "cardActiveProjectsTitle": "Active Projects",
+    "cardActiveProjectsUnit": "{{count}} in progress",
+    "cardCompletedProjectsTitle": "Completed Projects",
+    "cardCompletedProjectsUnit": "{{count}} finished",
+    "cardPendingInvoicesTitle": "Pending Invoices",
+    "cardPendingInvoicesUnit": "{{count}} due",
+    "cardOverdueInvoicesTitle": "Overdue Invoices",
+    "cardOverdueInvoicesUnit": "{{count}} overdue",
+    "cardLastPaymentTitle": "Last Payment",
+    "cardLastPaymentDate": "on {{date}}",
+    "cardNextDeliveryTitle": "Next Delivery",
+    "cardNextDeliveryDate": "scheduled for {{date}}",
+    "cardUnreadMessagesTitle": "Unread Messages",
+    "cardUnreadMessagesUnit": "{{count}} new messages",
+    "cardRecentDocumentsTitle": "Recent Documents",
+    "cardRecentDocumentsUnit": "{{count}} new docs",
+    "cardOpenTicketsTitle": "Open Tickets",
+    "cardOpenTicketsUnit": "{{count}} in support",
+    "cardTotalSpentTitle": "Total Invested",
+    "cardTotalSpentDesc": "to date",
+    "projectsSectionTitle": "Recent Projects",
+    "projectsPlaceholder": "List of recent projects will appear here...",
+    "seeAllProjects": "See all projects",
+    "financialSectionTitle": "Financial Summary",
+    "financialPlaceholder": "Financial summary will appear here...",
+    "seeAllInvoices": "See all invoices",
+    "supportSectionTitle": "Support & Messages",
+    "supportPlaceholder": "Latest messages or support tickets will appear here...",
+    "seeAllMessages": "See all messages",
+    "documentsSectionTitle": "Recent Documents",
+    "documentsPlaceholder": "Recent documents will appear here...",
+    "seeAllDocuments": "See all documents"
+  },
+  "clientMessages": {
+      "title": "Messages",
+      "description": "Here you will see messages exchanged with our team.",
+      "noMessages": "No messages found.",
+      "unreadTooltip": "Unread"
+  },
+  "clientDocuments": {
+      "title": "Documents",
+      "description": "Access proposals, contracts, and invoices for your projects.",
+      "noDocuments": "No documents found.",
+      "downloadButton": "Download",
+      "downloadButtonTooltip": "Download Document"
+  },
+  "financial": {
+    "title": "Financial",
+    "tableHeaderInvoiceNo": "Invoice #",
+    "tableHeaderDescription": "Description",
+    "tableHeaderDueDate": "Due Date",
+    "tableHeaderAmount": "Amount",
+    "tableHeaderStatus": "Status",
+    "tableHeaderPaidDate": "Paid Date",
+    "noInvoicesFound": "No invoices found.",
+    "statusPending": "Pending",
+    "statusPaid": "Paid",
+    "statusOverdue": "Overdue",
+    "statusCancelled": "Cancelled"
+  },
+  "loading": {
+    "invoices": "Loading invoices...",
+    "projects": "Loading projects...",
+    "documents": "Loading documents...",
+    "summary": "Loading summary..."
+  },
+  "errors": {
+    "notAuthenticated": "User not authenticated",
+    "loadFinancialError": "Error loading financial data",
+    "loadProjectsError": "Error loading projects",
+    "loadSummaryError": "Error loading summary"
+  },
+   "notifications": {
+    "title": "Notifications",
+    "invoiceDue": "Invoice #{{invoiceNumber}} due in {{days}} days.",
+    "projectUpdate": "Project {{projectName}} updated to \"{{status}}\".",
+    "newMessage": "New message received from support.",
+    "noNotifications": "No new notifications.",
+    "seeAll": "See all",
+    "timeAgo": "{{time}} ago",
+    "timeYesterday": "Yesterday"
+  },
+  "profile": {
+    "settings": "Settings"
+  }
+}
