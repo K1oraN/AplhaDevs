@@ -1,9 +1,11 @@
+// server/routes/authRoutes.js
 const express = require('express');
-const { loginUser, registerUser } = require('../controllers/authController');
+// Remove 'registerUser' daqui
+const { loginUser } = require('../controllers/authController');
 
 const router = express.Router();
 
 router.post('/login', loginUser);
-router.post('/register', registerUser); // Rota para testar o registro
+// router.post('/register', registerUser); // <-- REMOVIDO OU COMENTADO
 
 module.exports = router;

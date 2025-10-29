@@ -1,5 +1,5 @@
 // client/src/pages/ClientDashboard.jsx
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react'; // <-- ERRO CORRIGIDO AQUI
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import axios from 'axios';
@@ -12,7 +12,7 @@ const fadeIn = (delay = 0) => ({
     transition: { duration: 0.5, ease: "easeOut", delay }
 });
 
-// Funções de formatação (ajustadas)
+// Funções de formatação
 const formatCurrency = (value, currency = 'BRL', locale = 'pt-BR') => {
     try {
         return new Intl.NumberFormat(locale, { style: 'currency', currency: currency }).format(value);
@@ -44,7 +44,7 @@ const formatFullDate = (locale = 'pt-BR') => {
      }
 }
 
-// Ícones (Definições Completas Corrigidas)
+// Ícones
 const BriefcaseIcon = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7"><path strokeLinecap="round" strokeLinejoin="round" d="M20.25 14.15v4.07a2.25 2.25 0 0 1-2.25 2.25h-12a2.25 2.25 0 0 1-2.25-2.25v-4.07m16.5 0a2.25 2.25 0 0 0-2.25-2.25h-12a2.25 2.25 0 0 0-2.25 2.25m16.5 0v-4.07a2.25 2.25 0 0 0-2.25-2.25h-12a2.25 2.25 0 0 0-2.25 2.25v4.07m16.5 0a2.25 2.25 0 0 0-2.25-2.25h-12a2.25 2.25 0 0 0-2.25 2.25" /></svg>;
 const InvoiceIcon = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7"><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" /></svg>;
 const ClockIcon = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>;
@@ -56,9 +56,8 @@ const CheckCircleIcon = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none
 const ExclamationTriangleIcon = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7"><path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.008v.008H12v-.008Z" /></svg>;
 const LifebuoyIcon = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7"><path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-4.5m-9 4.5v-4.5m0-7.5a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v4.5m-9 0v-4.5m0-3.75a3 3 0 0 0-3-3H7.5a3 3 0 0 0-3 3v4.5m9 0v-4.5m0 3.75a3 3 0 0 0 3-3h1.5a3 3 0 0 0 3 3v4.5" /></svg>;
 const CurrencyDollarIcon = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>;
-const CogIcon = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 mr-2"><path strokeLinecap="round" strokeLinejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a6.76 6.76 0 0 1 0 1.745c.008.379.137.75.43.991l1.004.827a1.125 1.125 0 0 1 .26 1.43l-1.296 2.247a1.125 1.125 0 0 1-1.37.49l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.37-.49l-1.296-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.76 6.76 0 0 1 0-1.745c-.008-.379-.137-.75-.43-.991l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.296-2.247a1.125 1.125 0 0 1 1.37.49l1.217.456c.355.133.75.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.213-1.28Z" /><path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg>;
+const CogIcon = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 mr-2"><path strokeLinecap="round" strokeLinejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a6.76 6.76 0 0 1 0 1.745c.008.379.137.75.43.991l1.004.827a1.125 1.125 0 0 1 .26 1.43l-1.296 2.247a1.125 1.125 0 0 1-1.37.49l-1.217-.456c-.355-.133-.75-.072-1.076-.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.37-.49l-1.296-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.76 6.76 0 0 1 0-1.745c-.008-.379-.137-.75-.43-.991l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.296-2.247a1.125 1.125 0 0 1 1.37.49l1.217.456c.355.133.75.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.213-1.28Z" /><path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg>;
 const LogoutIconDashboard = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 mr-2"><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9" /></svg>;
-
 
 // Componente Card reutilizável
 const DashboardCard = ({ title, value, description, icon, linkTo, colorClass = 'text-red-500', delay }) => (
@@ -117,8 +116,10 @@ const ClientDashboard = () => {
     const fetchSummary = async () => {
       setLoading(true); setError('');
       try {
-        // Usa o estado userInfo que já buscamos
-        if (!userInfo || !userInfo.token) throw new Error(t('errors.notAuthenticated'));
+        if (!userInfo || !userInfo.token) {
+           setLoading(false);
+           return;
+        }
 
         const config = { headers: { Authorization: `Bearer ${userInfo.token}` } };
         // TODO: Usar VITE_API_URL
@@ -127,7 +128,7 @@ const ClientDashboard = () => {
              ...prevData,
              activeProjects: data.activeProjects ?? 0,
              pendingInvoices: data.pendingInvoices ?? 0,
-             // unreadMessages: data.unreadMessages ?? 0, // Descomentar quando API existir
+             // unreadMessages: data.unreadMessages ?? 0,
         }));
       } catch (err) {
         setError(err.response?.data?.message || err.message || t('errors.loadSummaryError'));
@@ -139,22 +140,19 @@ const ClientDashboard = () => {
         setLoading(false);
       }
     };
-    // Só busca o sumário se tivermos userInfo
+    
     if (userInfo) {
        fetchSummary();
-    } else {
-        // Se não há userInfo (ex: chegou aqui por URL direta sem ProtectedRoute funcionar),
-        // não faz sentido carregar, talvez redirecionar? Ou apenas não carrega.
-        setLoading(false);
     }
-  }, [t, navigate, userInfo]); // Depende de userInfo agora
+    
+  }, [t, navigate, userInfo]);
 
   // Função de saudação dinâmica
   const getGreeting = () => {
       const hour = new Date().getHours();
-      if (hour < 12) return t('clientDashboard.greetingMorning');
-      if (hour < 18) return t('clientDashboard.greetingAfternoon');
-      return t('clientDashboard.greetingEvening');
+      if (hour < 12) return t('clientDashboard.greetingMorning', 'Bom dia');
+      if (hour < 18) return t('clientDashboard.greetingAfternoon', 'Boa tarde');
+      return t('clientDashboard.greetingEvening', 'Boa noite');
   };
 
   // Hook para fechar dropdowns ao clicar fora
@@ -179,7 +177,7 @@ const ClientDashboard = () => {
   // Configuração dos Cards
   const cardsConfig = [
     { key: 'activeProjects', icon: <BriefcaseIcon/>, linkTo: '/portal/cliente/projetos', colorClass: 'text-blue-400' },
-    { key: 'completedProjects', icon: <CheckCircleIcon/>, linkTo: '/portal/cliente/projetos?filter=completed', colorClass: 'text-green-400' },
+    { key: 'completedProjects', icon: <CheckCircleIcon/>, linkTo: '/portal/cliente/projetos?filter=concluidos', colorClass: 'text-green-400' },
     { key: 'pendingInvoices', icon: <InvoiceIcon/>, linkTo: '/portal/cliente/financeiro', colorClass: 'text-yellow-400' },
     { key: 'overdueInvoices', icon: <ExclamationTriangleIcon/>, linkTo: '/portal/cliente/financeiro?filter=overdue', colorClass: 'text-orange-400' },
     { key: 'lastPayment', dateKey: 'lastPaymentDate', amountKey: 'lastPaymentAmount', icon: <InvoiceIcon/>, linkTo: '/portal/cliente/financeiro', colorClass: 'text-green-400' },
@@ -200,7 +198,6 @@ const ClientDashboard = () => {
 
 
   return (
-    // Usa 'bg-gray-900'
     <div className="bg-gray-900 min-h-full">
       {/* Header do Dashboard */}
       <motion.div
@@ -299,7 +296,7 @@ const ClientDashboard = () => {
 
             if (!loading) {
                  if (cardConf.amountKey) {
-                    value = formatCurrency(summaryData[cardConf.amountKey], 'BRL', i18n.language);
+                    value = formatCurrency(summaryData[cardConf.amountKey], i18n.language === 'pt-BR' ? 'BRL' : (i18n.language === 'en-US' ? 'USD' : 'EUR'), i18n.language);
                     const descKey = `clientDashboard.card${cardConf.key.charAt(0).toUpperCase() + cardConf.key.slice(1)}Desc`;
                     if (t(descKey, { defaultValue: '' })) description = t(descKey);
                  } else if (cardConf.dateKey && cardConf.taskKey) {
@@ -314,9 +311,8 @@ const ClientDashboard = () => {
                  } else {
                     value = summaryData[cardConf.key] ?? cardConf.value ?? 0;
                     const descKey = `clientDashboard.card${cardConf.key.charAt(0).toUpperCase() + cardConf.key.slice(1)}Unit`;
-                     // Adiciona tratamento para plural simples (ex: 'projeto' vs 'projetos')
                      let count = Number(value) || 0;
-                     if (t(descKey, { defaultValue: '', count: count })) {
+                     if (t(descKey, { defaultValue: '', count: count }) !== descKey) {
                          description = t(descKey, { count: count });
                      }
                  }
@@ -366,6 +362,14 @@ const ClientDashboard = () => {
            <Link to="/portal/cliente/documentos" className="text-red-400 hover:underline mt-4 inline-block text-sm font-medium">{t('clientDashboard.seeAllDocuments')}</Link>
          </div>
        </motion.div>
+       
+       <motion.footer className="mt-12 pt-6 border-t border-gray-700 text-center" {...fadeIn(0.9)}>
+            <p className="text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: t('footer.copyright') }}></p>
+            <div className="flex justify-center space-x-4 mt-2">
+                 <Link to="#" className="text-xs text-gray-500 hover:text-red-400">{t('footer.privacyPolicy')}</Link>
+                 <Link to="#" className="text-xs text-gray-500 hover:text-red-400">{t('footer.termsOfUse')}</Link>
+            </div>
+       </motion.footer>
     </div>
   );
 };
