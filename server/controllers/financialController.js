@@ -1,7 +1,7 @@
 // server/controllers/financialController.js
 const Invoice = require('../models/Invoice');
-// const User = require('../models/User'); // Se precisar incluir dados do usuário
-// const Project = require('../models/Project'); // Se precisar incluir dados do projeto
+const User = require('../models/User'); 
+// const Project = require('../models/Project'); // (Não é necessário aqui, mas não faz mal)
 
 // @desc    Buscar todas as faturas do cliente logado
 // @route   GET /api/financial/myinvoices
@@ -14,8 +14,7 @@ const getMyInvoices = async (req, res) => {
 
     const invoices = await Invoice.findAll({
       where: { clientId: req.user.id },
-      order: [['dueDate', 'DESC']], // Ordena pelas mais recentes datas de vencimento
-      // include: [{ model: Project, as: 'project', attributes: ['name'] }] // Opcional: Incluir nome do projeto
+      order: [['dueDate', 'DESC']], 
     });
 
     res.json(invoices);
@@ -32,16 +31,66 @@ const getMyInvoices = async (req, res) => {
 // @route   POST /api/financial/invoices
 // @access  Private/Gestor
 const createInvoice = async (req, res) => {
-    // TODO: Implementar criação de fatura
-    res.status(501).json({ message: 'Endpoint não implementado' });
+    // 1. Pegamos os dados do corpo da requisição
+    const { 
+        clientId, 
+        projectId, 
+        description, 
+        amount, 
+        dueDate, 
+        status, 
+        currency 
+    } = req.body;
+
+    // Validação básica
+    if (!clientId || !description || !amount || !dueDate || !status) {
+        return res.status(400).json({ message: 'Por favor, preencha todos os campos obrigatórios' });
+    }
+
+    try {
+        // 2. Usamos o Modelo Sequelize para criar a fatura no banco
+        const invoice = await Invoice.create({
+            clientId,
+            projectId: projectId || null, // projectId é opcional
+            description,
+            amount: parseFloat(amount),
+            dueDate,
+            status,
+            currency: currency || 'BRL',
+            // O invoiceNumber é gerado automaticamente pelo Hook do Model
+        });
+
+        // 3. Retornamos a fatura recém-criada (com o ID e invoiceNumber)
+        res.status(201).json(invoice);
+
+    } catch (error) {
+        console.error('Erro ao criar fatura:', error);
+        // Trata erros de validação do Sequelize (ex: clientId não existe)
+        if (error.name === 'SequelizeForeignKeyConstraintError') {
+             return res.status(400).json({ message: 'Cliente ou Projeto não encontrado.' });
+        }
+        res.status(500).json({ message: 'Erro no servidor ao criar fatura' });
+    }
 };
 
-// @desc    Buscar todas as faturas (Apenas Gestores)
-// @route   GET /api/financial/invoices
+// @desc    Buscar TODAS as faturas (Apenas Gestores)
+// @route   GET /api/financial/all
 // @access  Private/Gestor
 const getAllInvoices = async (req, res) => {
-    // TODO: Implementar busca de todas as faturas com paginação/filtros
-     res.status(501).json({ message: 'Endpoint não implementado' });
+  try {
+    const invoices = await Invoice.findAll({
+      order: [['dueDate', 'DESC']],
+      include: [{ 
+        model: User,
+        as: 'client',
+        attributes: ['id', 'name']
+      }]
+    });
+    res.json(invoices);
+  } catch (error) {
+    console.error('Erro ao buscar todas as faturas:', error);
+    res.status(500).json({ message: 'Erro no servidor' });
+  }
 };
 
 // @desc    Atualizar status de uma fatura (Apenas Gestores)
@@ -55,7 +104,7 @@ const getAllInvoices = async (req, res) => {
 
 module.exports = {
   getMyInvoices,
-  createInvoice,
+  createInvoice, // <-- Exportamos a nova função
   getAllInvoices,
   updateInvoiceStatus,
 };

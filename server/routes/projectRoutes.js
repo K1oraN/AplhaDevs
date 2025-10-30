@@ -1,17 +1,18 @@
 // server/routes/projectRoutes.js
 const express = require('express');
-const { getMyProjects, getProjectById, createProject, updateProject } = require('../controllers/projectController');
+const { getMyProjects, getProjectById, createProject, updateProject, getAllProjects } = require('../controllers/projectController');
 const { protect, isGestor } = require('../middleware/authMiddleware');
 
 const router = express.Router();
 
-// Rota para buscar os projetos DO USUÁRIO LOGADO
-router.get('/myprojects', protect, getMyProjects);
+// --- Rotas Específicas (Vêm primeiro) ---
+router.get('/myprojects', protect, getMyProjects); // Rota do Cliente
+router.get('/all', protect, isGestor, getAllProjects); // <-- ROTA DO GESTOR (AGORA VEM ANTES)
 
-// Rota para buscar UM projeto por ID
-router.get('/:id', protect, getProjectById); // <-- ROTA ATIVA
+// --- Rotas Dinâmicas (Vêm por último) ---
+router.get('/:id', protect, getProjectById); // <-- ROTA DE ID (AGORA VEM DEPOIS)
 
-// --- Rotas Futuras (Gestor) ---
+// --- Rotas de Ação (POST, PUT) ---
 // router.post('/', protect, isGestor, createProject);
 // router.put('/:id', protect, isGestor, updateProject);
 

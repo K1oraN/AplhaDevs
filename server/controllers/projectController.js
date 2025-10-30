@@ -1,6 +1,6 @@
 // server/controllers/projectController.js
 const Project = require('../models/Project');
-const User = require('../models/User');
+const User = require('../models/User'); // <-- ESTA É A LINHA QUE FALTAVA
 const { Op } = require('sequelize');
 
 // @desc    Buscar todos os projetos do cliente logado
@@ -65,10 +65,33 @@ const updateProject = async (req, res) => {
     res.status(501).json({ message: 'Endpoint não implementado' });
 };
 
+// @desc    Buscar TODOS os projetos (Apenas Gestores)
+// @route   GET /api/projects/all
+// @access  Private/Gestor
+const getAllProjects = async (req, res) => {
+  try {
+    // Busca todos os projetos, independentemente do cliente
+    const projects = await Project.findAll({
+      order: [['createdAt', 'DESC']],
+      include: [{ // Isto falhava
+        model: User,
+        as: 'client',
+        attributes: ['id', 'name']
+      }]
+    });
+    res.json(projects);
+  } catch (error)
+ {
+    console.error('Erro ao buscar todos os projetos:', error);
+    res.status(500).json({ message: 'Erro no servidor' });
+  }
+};
+
 
 module.exports = {
   getMyProjects,
-  getProjectById, // Garantir que está exportado
+  getProjectById,
   createProject,
   updateProject,
+  getAllProjects,
 };

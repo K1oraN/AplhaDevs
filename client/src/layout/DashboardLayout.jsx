@@ -46,13 +46,18 @@ const DashboardLayout = () => {
       { to: '/portal/cliente/documentos', icon: <DocumentsIcon />, label: t('sidebar.documents') },
     ];
 
+    // ***** MUDANÇA AQUI *****
     const adminLinks = [
       { to: '/portal/gestor/dashboard', icon: <DashboardIcon />, label: t('sidebar.dashboardGeneral') },
       { to: '/portal/gestor/projetos', icon: <ProjectsIcon />, label: t('sidebar.allProjects') },
-      // { to: '/portal/gestor/financeiro', icon: <FinancialIcon />, label: t('sidebar.financialGeneral') }, // Link futuro
+      
+      // 1. LINHA DESCOMENTADA:
+      { to: '/portal/gestor/financeiro', icon: <FinancialIcon />, label: t('sidebar.financialGeneral') }, 
+
       { to: '/portal/gestor/users', icon: <UsersIcon />, label: t('sidebar.manageUsers') },
       // Adicionar outros links de gestor aqui...
     ];
+    // *************************
 
      const funcionarioLinks = [ // Exemplo para funcionário (subconjunto do gestor)
         { to: '/portal/gestor/dashboard', icon: <DashboardIcon />, label: t('sidebar.dashboard') },
